@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function demo()
+		{
+			var a=document.frm.txt.value;
+			var b=document.frm.txt1.value;
+			var c =parseInt(a)+parseInt(b);
+			 document.write (c);
+		}
+	</script>
+	<script type="text/javascript">
+		function demo1()
+		{
+			var a=document.frm.txt2.value;
+			var b=document.frm.txt3.value;
+			var c =parseInt(a)-parseInt(b);
+			 document.write (c);
+		}
+	</script>
+		<script type="text/javascript">
+		function demo2()
+		{
+			var a=document.frm.txt4.value;
+			var b=document.frm.txt5.value;
+			var c =parseInt(a)*parseInt(b);
+			 document.write (c);
+		}
+	</script>
+	<script type="text/javascript">
+		function demo3()
+		{
+			var a=document.frm.txt6.value;
+			var b=document.frm.txt7.value;
+			var c =parseInt(a)/parseInt(b);
+			 document.write (c);
+		}
+	</script>
+</head>
+<body>
+	<br>
+<form name="frm">
+ add
+<input type="text" name="txt">
+<input type="text" name="txt1">
+<input type="button" value="click" name="" onclick="demo()"><br><br>
+sub	
+<input type="text" name="txt2">
+<input type="text" name="txt3">
+<input type="button" value="click" name="" onclick="demo1()"><br><br>
+mult
+<input type="text" name="txt4">
+<input type="text" name="txt5">
+<input type="button" value="click" name="" onclick="demo2()"><br><br>
+divi
+<input type="text" name="txt6">
+<input type="text" name="txt7">
+<input type="button" value="click" name="" onclick="demo3()">
+</form>
+</body>
+</html>

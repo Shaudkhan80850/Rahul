@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function demo() {
+			var a=document.frm.txt1.value;
+			var b=document.frm.txt2.value;
+			var c=parseInt(a)+parseInt(b);
+			document.frm.txt3.value=c;
+		}
+	</script>
+</head>
+<body>
+<form name="frm">
+	<input type="text" name="txt1">
+	<input type="text" name="txt2">
+	<input type="text" name="txt3" onfocus="demo()">
+</form>
+</body>
+</html>
