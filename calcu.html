@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.cl{
+			background-color: gray;
+			height: 270px;
+			width: 150px;
+			margin: 0 auto;
+		}
+		form{
+			margin-left: 10px;
+			padding-top: 10px;
+		}
+		.tf{
+			height: 20px;
+			width: 125px;
+		}
+		.in{
+			height: 30px;
+			width: 40px;
+			margin-top: 5px;
+		}
+		h1{
+			margin: 0px;
+			padding: 0px;
+			font-size: 20px;
+			font-family: verdana;
+			color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		function calcu(n) {
+		document.frm.data.value+=n;
+		}
+		function output()
+		{
+			var data=document.frm.data.value;
+			document.frm.data.value=eval(data);
+		}
+		function cle() {
+
+			var data=document.frm.data.value="";
+		}
+	</script>
+</head>
+<body>
+<div class="cl">	
+	<h1>CALCULATOR</h1>
+<form name="frm">
+	<input type="text" name="data" class="tf"><br>
+	    <input type="button" value="1" name="" onclick="calcu(this.value)" class="in">
+	      <input type="button" value="2" name="" onclick="calcu(this.value)" class="in">
+        <input type="button" value="3" name="" onclick="calcu(this.value)" class="in"><br>
+        <input type="button" value="4" name="" onclick="calcu(this.value)" class="in">
+         <input type="button" value="5" name="" onclick="calcu(this.value)" class="in">
+       <input type="button" value="6" name="" onclick="calcu(this.value)" class="in"><br>
+      <input type="button" value="7" name=""   onclick="calcu(this.value)" class="in">
+       <input type="button" value="8" name="" onclick="calcu(this.value)" class="in">
+         <input type="button" value="9" name="" onclick="calcu(this.value)" class="in"><br>
+          <input type="button" value="0" name="" onclick="calcu(this.value)" class="in">
+           <input type="button" value="+" name="" onclick="calcu(this.value)" class="in">
+            <input type="button" value="-" name="" onclick="calcu(this.value)" class="in"><br>
+             <input type="button" value="*" name="" onclick="calcu(this.value)" class="in"> 
+             <input type="button" value="/" name="" onclick="calcu(this.value)" class="in">
+               <input type="button" value="=" name="" onclick="output()" class="in"><br>
+                 <input type="button" value="cles" name="" onclick="cle()" class="in">
+</form>
+</div>
+</body>
+</html>
